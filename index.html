@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Calculator</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="result" class="result" disabled>
+        <div class="buttons">
+            <!-- First Row -->
+            <button onclick="setMode('rad')">Rad</button>
+            <button onclick="setMode('deg')">Deg</button>
+            <button onclick="calculateFactorial()">x!</button>
+            <button onclick="appendValue('(')">(</button>
+            <button onclick="appendValue(')')">)</button>
+            <button onclick="appendValue('%')">%</button>
+            <button onclick="clearResult()">AC</button>
+
+            <!-- Second Row -->
+            <button onclick="appendValue('Inv')">Inv</button>
+            <button onclick="calculateTrig('sin')">sin</button>
+            <button onclick="calculateLog('ln')">ln</button>
+            <button onclick="appendValue('7')">7</button>
+            <button onclick="appendValue('8')">8</button>
+            <button onclick="appendValue('9')">9</button>
+            <button onclick="appendValue('/')">÷</button>
+
+            <!-- Third Row -->
+            <button onclick="appendValue('π')">π</button>
+            <button onclick="calculateTrig('cos')">cos</button>
+            <button onclick="calculateLog('log')">log</button>
+            <button onclick="appendValue('4')">4</button>
+            <button onclick="appendValue('5')">5</button>
+            <button onclick="appendValue('6')">6</button>
+            <button onclick="appendValue('*')">×</button>
+
+            <!-- Fourth Row -->
+            <button onclick="appendValue('e')">e</button>
+            <button onclick="calculateTrig('tan')">tan</button>
+            <button onclick="calculateSquareRoot()">√</button>
+            <button onclick="appendValue('1')">1</button>
+            <button onclick="appendValue('2')">2</button>
+            <button onclick="appendValue('3')">3</button>
+            <button onclick="appendValue('-')">−</button>
+
+            <!-- Fifth Row -->
+            <button onclick="appendValue('Ans')">Ans</button>
+            <button onclick="appendValue('EXP')">EXP</button>
+            <button onclick="calculatePower()">xʸ</button>
+            <button onclick="appendValue('0')">0</button>
+            <button onclick="appendValue('.')">.</button>
+            <button onclick="calculateResult()">=</button>
+            <button onclick="appendValue('+')">+</button>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
